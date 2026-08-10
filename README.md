@@ -40,12 +40,28 @@ They are wrong by an hour during US daylight saving, which is a fine trade for a
 static image whose whole point is the headline, but it is why they are not
 labelled with a date.
 
-## One thing to fix before launch
+## Where it is published
 
-`og:image` and `twitter:image` in `index.html` are **relative** paths, because
-the production domain is not settled. Facebook, Slack and X resolve those
-against the page URL; some other scrapers do not. Once the domain exists, make
-both absolute (`https://.../og.png`).
+<https://shahzaibb101.github.io/awake-landing/>, GitHub Pages, served from the
+root of `main` in the **public** `shahzaibb101/awake-landing` repo.
+
+This folder is the source of truth. `awake-landing` is a deploy target holding
+nothing but the contents of this directory, which is why the app source can stay
+private while the site is public. Publish with:
+
+```bash
+git subtree push --prefix=site landing main
+```
+
+from the repo root, where `landing` is the remote for `awake-landing`. Commit to
+`awake` first; the subtree push only carries what is already committed.
+
+`.nojekyll` turns off Jekyll processing, which the page has no use for.
+
+`og:image`, `twitter:image` and `og:url` in `index.html` are **absolute** and
+hardcode that Pages URL, because scrapers do not all resolve a relative
+`og:image` against the page. If the site ever moves to its own domain, those
+three are what change.
 
 ## The demo is the app's real logic, reimplemented
 
