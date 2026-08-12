@@ -84,7 +84,7 @@ the demo roster opted in, so it never fires here. Everything else does.
 
 If the app's rules change, this page is now a second implementation that can
 drift. It is a marketing page, not a source of truth, but the numbers in it
-(34,080 cities, 418 zones, 136 tests, 2.5 MB) are real and worth re-checking
+(34,080 cities, 418 zones, 159 tests, 2.3 MB) are real and worth re-checking
 before a release.
 
 ## Local preview
