@@ -11,7 +11,8 @@ Deploy to Vercel as a static site, no build step.
 | File | Notes |
 |---|---|
 | `index.html` | The whole page. Styles, markup and the interactive demo, inline. |
-| `Awake-0.1.6.dmg` | The download the page links to. Copy a fresh one in after every `tools/release.sh` run, delete the superseded one, and update the three `href="Awake-…dmg"` links plus the size in the hero. |
+| `Awake-0.1.7.dmg` | The download the page links to *and* the Sparkle enclosure — one artifact, two audiences. `tools/release.sh` now copies it in and deletes the superseded one itself; the three `href="Awake-…dmg"` links plus the size in the hero still need updating by hand. |
+| `appcast.xml` | The Sparkle update feed. Written by `tools/release.sh`, never by hand — its version, build and length are read out of the DMG and its signature comes from the Keychain. |
 | `og.png` | 1200x630 share card. Generated, not hand-drawn, see below. |
 | `og-card.html` | The source of `og.png`, at exactly 1200x630. |
 | `og-fonts/` | Bricolage Grotesque and IBM Plex Mono, copied from the app bundle so the card renders without touching the network. Both OFL 1.1. |
