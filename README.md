@@ -11,7 +11,7 @@ Deploy to Vercel as a static site, no build step.
 | File | Notes |
 |---|---|
 | `index.html` | The whole page. Styles, markup and the interactive demo, inline. |
-| `Awake-0.1.3.dmg` | The download the page links to. Copy a fresh one in after every `tools/release.sh` run, delete the superseded one, and update the three `href="Awake-…dmg"` links plus the size in the hero. |
+| `Awake-0.1.6.dmg` | The download the page links to. Copy a fresh one in after every `tools/release.sh` run, delete the superseded one, and update the three `href="Awake-…dmg"` links plus the size in the hero. |
 | `og.png` | 1200x630 share card. Generated, not hand-drawn, see below. |
 | `og-card.html` | The source of `og.png`, at exactly 1200x630. |
 | `og-fonts/` | Bricolage Grotesque and IBM Plex Mono, copied from the app bundle so the card renders without touching the network. Both OFL 1.1. |
@@ -84,7 +84,7 @@ the demo roster opted in, so it never fires here. Everything else does.
 
 If the app's rules change, this page is now a second implementation that can
 drift. It is a marketing page, not a source of truth, but the numbers in it
-(34,080 cities, 418 zones, 159 tests, 2.3 MB) are real and worth re-checking
+(34,080 cities, 418 zones, 214 tests, 2.4 MB) are real and worth re-checking
 before a release.
 
 ## Local preview
