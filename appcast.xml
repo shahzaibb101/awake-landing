@@ -3,13 +3,13 @@
     <channel>
         <title>Awake</title>
         <item>
-            <title>0.1.7</title>
-            <pubDate>Tue, 18 Aug 2026 12:11:29 +0500</pubDate>
-            <sparkle:version>27</sparkle:version>
-            <sparkle:shortVersionString>0.1.7</sparkle:shortVersionString>
+            <title>0.1.8</title>
+            <pubDate>Tue, 18 Aug 2026 16:43:18 +0500</pubDate>
+            <sparkle:version>32</sparkle:version>
+            <sparkle:shortVersionString>0.1.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://shahzaibb101.github.io/awake-landing/Awake-0.1.7.dmg" length="3494581" type="application/octet-stream" sparkle:edSignature="0oYNwvXoj2m5w0S5TpLjDdnXoCe1czKRJVc2Ih7zNd5lL8HoFMIoHOQv0HmGH4mR+M7Ke17tdFhtMsqrTmzxDg=="/>
+            <enclosure url="https://shahzaibb101.github.io/awake-landing/Awake-0.1.8.dmg" length="3488874" type="application/octet-stream" sparkle:edSignature="0y6DpE/jdUXS0aR/xNWMnsVvmrN6B4ekcbUM8wWu7W3jb9tV3Tcx7EfNBZxK1wjWEpDblc6GZNw7C68Fw5vuDw=="/>
         </item>
     </channel>
 </rss>
