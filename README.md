@@ -12,6 +12,7 @@ Deploy to Vercel as a static site, no build step.
 |---|---|
 | `index.html` | The whole page. Styles, markup and the interactive demo, inline. |
 | `Awake-0.1.9.dmg` | The download the page links to *and* the Sparkle enclosure — one artifact, two audiences. `tools/release.sh` now copies it in and deletes the superseded one itself; the three `href="Awake-…dmg"` links plus the size in the hero still need updating by hand. |
+| `Awake.dmg` | Stable-named alias of the versioned DMG, written by `tools/release.sh` and gated byte-identical. For channels that cannot be edited on release day (Gumroad, old posts): link `…/awake-landing/Awake.dmg` once and it is always the latest release. |
 | `appcast.xml` | The Sparkle update feed. Written by `tools/release.sh`, never by hand — its version, build and length are read out of the DMG and its signature comes from the Keychain. |
 | `og.png` | 1200x630 share card. Generated, not hand-drawn, see below. |
 | `og-card.html` | The source of `og.png`, at exactly 1200x630. |
